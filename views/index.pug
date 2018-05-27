@@ -1,0 +1,16 @@
+extends layout
+block header
+block content
+  script.
+    $(document).ready(function(){
+        $("#button1").click(function(){
+            $("#login").load('login.pug');
+            //$.post("http://localhost:3000/login.pug");
+            $("#button1").hide();
+         });
+      });
+  h1 #{name}
+    #content.main
+      #login
+      input( id='button1' type='submit', value='Zaloguj')
+      
