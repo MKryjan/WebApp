@@ -20,8 +20,9 @@ login form{
 	display: none;
 	color: #3b4e83;
 }
-open {
-	margin: 0;
+#open {
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 10;
 	cursor: pointer;
 	background-image:  url(../_images/open.png);
 	background-repeat: no-repeat;
@@ -29,8 +30,14 @@ open {
 	color: white;
 	padding: 5px 0 5px 30px;
 	border-radius: 0 0 5px 5px;
+	width: 338px;
+	background-color: #809dcf;
+	
 }
-#button1,#button2 {
+#login .close {
+	width: 338px;
+}
+#button1,#logInButton {
 	width: 100px;
 	height: 30px;
 	margin: 10px 0;
@@ -45,29 +52,20 @@ open {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
  }
+
  h2 {
 	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	color: #4d78c9;
 	font-size: 18px; 
  }
- .open{
-	width: 100%;
-	background-color: #1e1e1e;
-	padding: 20px;
-	display: none;
-	border-bottom: 1px solid #5bc1ff;
-  }
-  .login{
-	width: 800px;
-	margin: 0 auto;
-	overflow: hidden;
-  }
+
 #login form {
 	padding: 10px 10px 0 10px;
 	display: none;
+	position: left;
 }
 #login label {
-	font-size: .75em;
+	font-size: 0.9em;
 	color: white;
 	font-weight: bold;
 	width: 100px;
@@ -75,6 +73,7 @@ open {
 	margin: 0 15px 0 0;
 	display: inline-block;
 }
-#login a {
-	text-decoration: none;
+#login {
+	float:right;
 }
+

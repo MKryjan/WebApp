@@ -3,27 +3,27 @@ block header
 block content
   script.
      $(document).ready(function(){
-         $("#button2").click(function(e){
-            //var userName = $('#user').val();
-            //var userPassword = $('#pass').val();
-            //alert("Witaj użytkowniku "+userName+"!");
-            e.preventDefault();
-         });//clickbutton
          $('#open').click(function(e){
               e.preventDefault();
               $('#login form').slideToggle(400);
               $(this).toggleClass('close');
             });//clickform
+         $("#logInButton").click(function(e){
+            e.preventDefault();
+              var userName = $('#user').val();
+              var userPassword = $('#pass').val();
+              $('#login form').slideToggle(400);
+         });//clickbutton
       });//ready
   #login
-    a(href='form.pug')
+    #formLogInDiv
       p#open Formularz logowania
-    form
+    form#log
       p
         label(for='username') Użytkownik:
-        input#username(type='text', name='username')
+        input#user(type='text', name='username')
       p
         label(for='password') Hasło:
-        input#password(type='text', name='password')
+        input#pass(type='password', name='password')
       p.button
-        input#button2(type='submit', name='button', value='Loguj')
+        input#logInButton(type='submit', name='button', value='Loguj')
