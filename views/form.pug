@@ -1,0 +1,16 @@
+extends layout
+block header
+block content
+  h2 Logowanie
+    #login
+        a(href='')
+            p#open Formularz logowania
+        form
+            p
+            label(for='username') Użytkownik:
+            input#username(type='text', name='username')
+            p
+            label(for='password') Hasło:
+            input#password(type='text', name='password')
+            p.button
+            input#button2(type='submit', name='button', value='Loguj')

@@ -47,6 +47,11 @@ var con = mysql.createConnection({
         name: 'Witaj w aplikacji!'
       });
         });
+app.get('/form.pug', function(req, res){
+      res.render('form.pug',{
+        name: 'Witaj w aplikacji!'
+      });
+        });
 
   /* app.get('/', function(req, res) {
     res.render('index', {

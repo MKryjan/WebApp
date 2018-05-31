@@ -4,19 +4,26 @@ block content
   script.
      $(document).ready(function(){
          $("#button2").click(function(e){
-            var userName = $('#user').val();
-            var userPassword = $('#pass').val();
-            alert("Witaj użytkowniku "+userName+"!");
+            //var userName = $('#user').val();
+            //var userPassword = $('#pass').val();
+            //alert("Witaj użytkowniku "+userName+"!");
             e.preventDefault();
-         });
-      });
-  h2 Logowanie
-    form#content.main
-     p  
-     label(for='username') Login: 
-     input(id='user',type='text', name='username')
-     p
-     label(for='password') Hasło:   
-     input(id='pass', type="password", name='password')
-     p.button
-     input(id='button2' type='submit', value='Loguj')
+         });//clickbutton
+         $('#open').click(function(e){
+              e.preventDefault();
+              $('#login form').slideToggle(400);
+              $(this).toggleClass('close');
+            });//clickform
+      });//ready
+  #login
+    a(href='form.pug')
+      p#open Formularz logowania
+    form
+      p
+        label(for='username') Użytkownik:
+        input#username(type='text', name='username')
+      p
+        label(for='password') Hasło:
+        input#password(type='text', name='password')
+      p.button
+        input#button2(type='submit', name='button', value='Loguj')
