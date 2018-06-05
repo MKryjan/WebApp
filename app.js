@@ -33,7 +33,7 @@ var con = mysql.createConnection({
   app.get('/login.pug', function(req, res){
       res.render(
         'login.pug',{
-          name: 'Logowanie'
+          //greeting: 'Logowanie'
         }, 
         function(err, html){
           if(err) console.log(err);
@@ -42,16 +42,21 @@ var con = mysql.createConnection({
         );
       console.log("wlazłem do login.pug"); 
        });
-  app.get('/index.pug', function(req, res){
-      res.render('index.pug',{
-        name: 'Witaj w aplikacji!'
+app.get('/index.pug', function(req, res){
+    res.render('index.pug',{
+        greeting: 'Witaj w aplikacji'
       });
         });
 app.get('/form.pug', function(req, res){
-      res.render('form.pug',{
-        name: 'Witaj w aplikacji!'
+    res.render('form.pug',{
+        //greeting: 'Witaj w aplikacji'
       });
         });
+app.get('/profile.pug', function(req, res){
+    res.render('profile.pug',{
+        //greeting:'Użytkowniku: '
+          });
+      });
 
   /* app.get('/', function(req, res) {
     res.render('index', {
