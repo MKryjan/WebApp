@@ -1,0 +1,29 @@
+extends layout
+block header
+      header.header
+        #divHeader
+          .container#cssmenu
+              ul#menuList
+                li#start
+                  a(href='') Start
+                li#day
+                  a(href='') Dziennik
+                li#diet
+                  a(href='') Dieta
+                li#browser
+                  a(href='http://localhost:3000/products') Wyszukaj produkt
+        script(src='typeahead.min.js' type='text/javascript')
+      #unlog
+        input( id='unlogButton' type='submit', value='Wyloguj')
+        script.
+            $(document).ready(function(e){
+            $('input.typeahead').typeahead({
+            name: 'Type your Query',
+            remote: 'http://localhost:3000/search?key=%QUERY',
+            limit: 10
+            });
+            });
+block content
+    .bs-example
+        input.typeahead.tt-query(type='text' name='typeahead' autocomplete='off' spellcheck='false' placeholder='Type your Query')
+
