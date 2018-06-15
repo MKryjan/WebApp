@@ -1,6 +1,6 @@
 
 body {
-	background-color: rgb(164, 192, 223);
+	background-color: rgb(255, 255, 255);
 }
 .header{
 	position: fixed;
@@ -9,49 +9,48 @@ body {
 
 h1 {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    color: white;
+    color: rgb(100,167,209);
 	text-align: center;
 	font-size: 20px;
 	float:left;
 }
 
 p {
-    color: rgb(73, 93, 146);
+    color: rgb(100,167,209);
     font-family: "Lato",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 15px;
 }
 login form{
 	padding: 10px 10px 0 10px;
 	display: none;
-	color: #3b4e83;
+	color: rgb(100,167,209);
 }
 #open {
 	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	margin: 10;
 	cursor: pointer;
-	background-image:  url(../_images/open.png);
 	background-repeat: no-repeat;
 	background-position:  8px 7px;
 	color: white;
 	padding: 5px 0 5px 30px;
 	border-radius: 0 0 5px 5px;
 	width: 338px;
-	background-color: #809dcf;
+	background-color: rgb(130,224,252);
 	
 }
 #login .close {
 	width: 338px;
 }
-#button1,#logInButton {
+#logButton,#logInButton,#unlogButton {
 	width: 100px;
 	height: 30px;
 	margin: 10px 0;
-	background: #4d78c9;
+	background: rgb(130,224,252);;
 	border: none;
-	color: #fff;
+	color: white;
 	font-size: 14px;
 	font-weight: bold;
-	position: center;
+	float:right;
 	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -60,7 +59,7 @@ login form{
 
  h2 {
 	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	color: #4d78c9;
+	color: rgb(130,224,252);;
 	font-size: 18px; 
  }
 #intro{
@@ -68,7 +67,7 @@ login form{
 	height: 400px;
 	float:left;
 	padding: 30px 20px 0 20px;
-	border-color: #ffffff;
+	border-color: rgb(130,224,252);
 }
 
 #login form {
@@ -78,7 +77,7 @@ login form{
 }
 #login label {
 	font-size: 0.9em;
-	color: white;
+	color: rgb(130,224,252);
 	font-weight: bold;
 	width: 100px;
 	text-align:right;
@@ -90,6 +89,53 @@ login form{
 }
 #profileDiv{
 	float: left;
+}
+.bs-example{
+	font-family: sans-serif;
+	padding: 50px 12px;
+}
+.typeahead, .tt-query, .tt-hint {
+	border: 2px solid #CCCCCC;
+	border-radius: 8px;
+	font-size: 24px;
+	height: 30px;
+	line-height: 30px;
+	outline: medium none;
+	padding: 8px 12px;
+	width: 396px;
+}
+.typeahead {
+	background-color: #FFFFFF;
+}
+.typeahead:focus {
+	border: 2px solid rgb(130,224,252);;
+}
+.tt-query {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+	color: #999999;
+}
+.tt-dropdown-menu {
+	background-color: rgb(100,167,209);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 12px;
+	padding: 8px 0;
+	width: 422px;
+}
+.tt-suggestion {
+	font-size: 24px;
+	line-height: 24px;
+	padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+	background-color: #0097CF;
+	color: #FFFFFF;
+}
+.tt-suggestion p {
+	margin: 0;
 }
 #cssmenu {
 	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -149,7 +195,7 @@ login form{
 	-ms-transition: max-height 0.4s ease-out;
 	-o-transition: max-height 0.4s ease-out;
 	transition: max-height 0.4s ease-out;
-	background: #ffffff;
+	background: #rgb(130,224,252);;
   }
   #cssmenu ul li ul li.has-sub:after {
 	display: block;
@@ -174,7 +220,7 @@ login form{
 	height: 0;
 	width: 0;
 	border: 3px solid transparent;
-	border-left-color: #ffffff;
+	border-left-color: rgb(130,224,252);
 	z-index: 2;
 	top: 15px;
 	right: 15px;
@@ -183,7 +229,7 @@ login form{
 	right: auto;
 	left: 15px;
 	border-left-color: transparent;
-	border-right-color: #ffffff;
+	border-right-color: rgb(130,224,252);
   }
   #cssmenu ul li ul li a {
 	font-size: 14px;
@@ -280,7 +326,7 @@ login form{
 	top: 21px;
   }
   #cssmenu > ul > li > a {
-	color: #ffffff;
+	color: rgb(100,167,209);
 	padding: 15px 20px;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -295,11 +341,11 @@ login form{
   }
   #cssmenu > ul > li:hover > a,
   #cssmenu > ul > li.active > a {
-	color: #000000;
+	color: rgb(130,224,252);
   }
   #cssmenu > ul > li:hover > a:after,
   #cssmenu > ul > li.active > a:after {
-	background: #000000;
+	background: rgb(130,224,252);
   }
   #cssmenu > ul > li:hover > a:before,
   #cssmenu > ul > li.active > a:before {
@@ -411,13 +457,13 @@ login form{
 	}
 	#cssmenu ul li ul li a {
 	  padding: 8px 20px 8px 35px;
-	  color: #ffffff;
+	  color: rgb(130,224,252);
 	}
 	#cssmenu ul li ul ul li a {
 	  padding: 8px 20px 8px 50px;
 	}
 	#cssmenu ul li ul li:hover > a {
-	  color: #000000;
+	  color: rgb(130,224,252);
 	}
 	#cssmenu #menu-button {
 	  display: block;
@@ -430,7 +476,7 @@ login form{
 	  font-weight: 700;
 	  font-size: 14px;
 	  letter-spacing: 1px;
-	  color: #ffffff;
+	  color: rgb(130,224,252);
 	  cursor: pointer;
 	}
 	#cssmenu #menu-button:after {
@@ -439,8 +485,8 @@ login form{
 	  position: absolute;
 	  height: 3px;
 	  width: 22px;
-	  border-top: 2px solid #ffffff;
-	  border-bottom: 2px solid #ffffff;
+	  border-top: 2px solid rgb(130,224,252);
+	  border-bottom: 2px solid rgb(130,224,252);
 	  right: 20px;
 	  top: 16px;
 	}
@@ -450,7 +496,7 @@ login form{
 	  position: absolute;
 	  height: 3px;
 	  width: 22px;
-	  border-top: 2px solid #ffffff;
+	  border-top: 2px solid rgb(130,224,252);
 	  right: 20px;
 	  top: 26px;
 	}
