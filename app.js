@@ -56,6 +56,9 @@ con.connect(function (err) {
       //greeting:'Użytkowniku: '
     });
   });
+  app.get('/diary', function (req, res) {
+    res.render('diary.pug');
+  });
   app.get('/products', function (req, res) {
     res.render('products.pug');
   });

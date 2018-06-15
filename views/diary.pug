@@ -1,0 +1,27 @@
+extends layout
+block header
+      header.header
+        #divHeader
+          .container#cssmenu
+              ul#menuList
+                li#start
+                  a(href='http://localhost:3000/index.pug')  Start
+                li#diagrams
+                  a(href='') Wykresy trendów
+                li#raport
+                  a(href='') Drukuj raport
+        script(src='wickedpicker.js' type='text/javascript')
+        style
+          include wickedpicker.css
+      #unlog
+        input( id='unlogButton' type='submit', value='Wyloguj')
+        script.
+            $(document).ready(function(e){
+                $('.timepicker').wickedpicker({twentyFour: true});
+            });
+block content
+  #insertG
+    input#Ginput(type='text' placeholder='np.100')
+    input#Hinput(type='text' class='timepicker')
+    input#buttonInp( type='submit', value='Wprowadź')
+

@@ -5,9 +5,9 @@ block header
           .container#cssmenu
               ul#menuList
                 li#start
-                  a(href='') Start
+                  a(href='http://localhost:3000/index.pug') Start
                 li#day
-                  a(href='') Dziennik
+                  a(href='http://localhost:3000/diary') Dziennik
                 li#diet
                   a(href='') Dieta
                 li#browser
@@ -17,13 +17,13 @@ block header
         input( id='unlogButton' type='submit', value='Wyloguj')
         script.
             $(document).ready(function(e){
-            $('input.typeahead').typeahead({
+            $('#typeaheadInp').typeahead({
             name: 'Type your Query',
             remote: 'http://localhost:3000/search?key=%QUERY',
             limit: 10
             });
             });
 block content
-    .bs-example
-        input.typeahead.tt-query(type='text' name='typeahead' autocomplete='off' spellcheck='false' placeholder='Type your Query')
-
+  #search
+    input#typeaheadInp(type='text' name='typeahead' autocomplete='off' spellcheck='false' placeholder='Type your Query')
+    input#buttonBrowse( type='submit', value='Szukaj')
