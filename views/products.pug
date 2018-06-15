@@ -12,7 +12,7 @@ block header
                   a(href='') Dieta
                 li#browser
                   a(href='http://localhost:3000/products') Wyszukaj produkt
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js' type='text/javascript')
+        script(src='typeahead.min.js' type='text/javascript')
       #unlog
         input( id='unlogButton' type='submit', value='Wyloguj')
         script.
@@ -25,5 +25,5 @@ block header
             });
 block content
     .bs-example
-        input.typeahead.tt-query(type='text' name='typeahead' autocomplete='on' spellcheck='false' placeholder='Type your Query')
+        input.typeahead.tt-query(type='text' name='typeahead' autocomplete='off' spellcheck='false' placeholder='Type your Query')
 

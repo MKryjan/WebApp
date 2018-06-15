@@ -117,7 +117,7 @@ login form{
 	color: #999999;
 }
 .tt-dropdown-menu {
-	background-color: rgb(100,167,209);
+	background-color: white;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 8px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -131,8 +131,8 @@ login form{
 	padding: 3px 20px;
 }
 .tt-suggestion.tt-is-under-cursor {
-	background-color: #0097CF;
-	color: #FFFFFF;
+	background-color: white;
+	color: rgb(100,167,209);
 }
 .tt-suggestion p {
 	margin: 0;
